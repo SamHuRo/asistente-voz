@@ -26,7 +26,7 @@ def transformar_audio_en_texto():
 
         try:
             #Buscar en google lo que esucho
-            pedido = r.recognize_google_cloud(audio, lenguage="en-US")
+            pedido = r.recognize_google_cloud(audio, language="en-US")
             #Prueba
             print("Digiste: ", pedido)
             
@@ -41,11 +41,11 @@ def transformar_audio_en_texto():
             print("UPS!! No hay servicio")
 
             return "Sigo esperando"
-        except:
+        #except:
             #Prueba
-            print("UPS!! Algo salio mal")
+            #print("UPS!! Algo salio mal")
 
-            return "Sigo esperando"
+            #return "Sigo esperando"
 
 
 #Utilizar funcion
